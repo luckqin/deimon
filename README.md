@@ -7,8 +7,11 @@
 ### Feature
 
 🎉 基于 React + TS 的轻量组件
+
 🎉 高颜值，两种主题任意切换
+
 🎉 组件设计有想法，追求性能
+
 🎉 组件发es包，更好地支持 TreeShaking
 
 ### Install
