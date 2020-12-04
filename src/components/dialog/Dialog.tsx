@@ -3,7 +3,7 @@ import { ReactNode, useCallback } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import { Portal } from '../portal';
 
-interface IDialogProps {
+export interface IDMDialogProps {
   visible?: boolean;
   onClose?: () => void;
   title?: ReactNode;
@@ -13,7 +13,7 @@ interface IDialogProps {
   maskClosable?: boolean;
 }
 
-export const Dialog = React.memo<IDialogProps>(props => {
+export const Dialog = React.memo<IDMDialogProps>(props => {
   const {
     visible,
     children,
@@ -41,7 +41,7 @@ export const Dialog = React.memo<IDialogProps>(props => {
           <CSSTransition
             appear
             in={visible}
-            timeout={30000}
+            timeout={300}
             classNames="dm-zoom"
             mountOnEnter
             unmountOnExit
@@ -49,9 +49,9 @@ export const Dialog = React.memo<IDialogProps>(props => {
             <div className="dm-dialog" onClick={e => e.stopPropagation()}>
               {title && <div className="dm-dialog-header">{title}</div>}
               {showCloseBtn && (
-                <button className="dm-dialog-closebtn" onClick={closeDialog}>
+                <div className="dm-dialog-closebtn" onClick={closeDialog}>
                   Close Dialogxx
-                </button>
+                </div>
               )}
               <div className="dm-dialog-body">{children}</div>
               {footer && <div className="dm-dialog-footer">{footer}</div>}
@@ -63,6 +63,6 @@ export const Dialog = React.memo<IDialogProps>(props => {
   );
 });
 
-Dialog.displayName = 'dm-Dialog';
+Dialog.displayName = 'DM-Dialog';
 
 export default Dialog;

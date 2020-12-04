@@ -2,6 +2,7 @@ import React, { useState, createContext } from 'react';
 import ReactDom from 'react-dom';
 import { PurePortal, Portal } from '../../es';
 import { DialogTest } from './dialog';
+import { IconTest } from './icon';
 
 export const ctx = createContext({
   userName: 'xyq',
@@ -40,6 +41,7 @@ function App() {
 
         <br />
         <DialogTest />
+        <IconTest />
       </div>
     </Provider>
   );
