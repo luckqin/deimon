@@ -1,14 +1,10 @@
 # deimon
 
-🎃 Deity Demon - 一套基于 React 的 Web 前端组件库
-
-> Deity Demon 意为神与魔，也是组件库的两个主题色
+🎃 deimon - 一套基于 React 的 Web 前端组件库
 
 ### Feature
 
 🎉 基于 React + TS 的轻量组件
-
-🎉 高颜值，两种主题任意切换
 
 🎉 组件设计有想法，追求性能
 
