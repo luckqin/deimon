@@ -1,8 +1,8 @@
 {
-  "name": "deimon",
+  "name": "fesprc",
   "version": "1.0.0",
   "license": "ISC",
-  "description": "🎃 Deity Demon - 一套基于 React 的 Web 前端组件库",
+  "description": "🎃 fesprc - 一套基于 React 的 Web 前端组件库",
   "scripts": {
     "build": "./scripts/build.sh",
     "dev:es": "./scripts/build-ts.sh --dev",
